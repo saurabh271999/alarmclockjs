@@ -7,7 +7,7 @@
 .main {
     width: 100vw;
     height: 95vh;
-    background-color: pink;
+    background-color: rgb(53, 45, 64);
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -27,7 +27,7 @@
     margin: 20px;
     width: 500px;
     height: 55%;
-    background-color: blueviolet;
+    background-color:#bab8ce;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
     justify-content: space-between;
     float: left;
     margin: 10px;
-    background-color: blueviolet;
+    background-color: #bab8ce;
     border-radius: 10px;
     height: 150px;
     width: 300px;
@@ -57,7 +57,7 @@
    
 }
 .btn {
-    background-color: blueviolet;
+    background-color: #bab8ce;
     width: 200px;
     height: 30px;
     display: flex;
@@ -78,7 +78,7 @@
 }
 
 .time-div {
-    background-color: turquoise;
+    background-color: #2d2f56;
     min-width: 400px;
     min-height: 70px; 
     margin: 40px;
@@ -98,7 +98,7 @@
     background-color: white;
 }
 .msg-div{
-    background-color: yellowgreen;
+    background-color: #2d2f56;
     height: 40px;
     width: 500px;
     display: flex;
@@ -111,13 +111,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: #2d2f56;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 400px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 10px ;
 }
 
 
