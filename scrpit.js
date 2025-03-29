@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       setInterval(gettime, 1000);
+      function playaudio() {
+        var sound = document.querySelector('.sound');
+        if (sound) {
+            sound.play();
+        }
+    }
       
       function displayvalue() {
         var wakeup = document.getElementById("wakeup");
@@ -53,24 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
         var lunchvalue = lunch.value 
         var napvalue = nap.value
         var nightvalue = night.value
+        var sound = document.querySelector('.sound')
         var pic = document.querySelector('.pic-div')
         if(wakeupvalue == hours){
             pic.style.backgroundImage = "url(./morning.jpg)"
-            // pic.style.backgroundSize = 'cover'
-            // pic.style.backgroundRepeat = "no-repeat";
+            playaudio()
             document.querySelector('.msg-div').innerHTML = 'Good morning'
         }
         else if(lunchvalue == hours){
            pic.style.backgroundImage = 'url(./images.jpg)'
             document.querySelector('.msg-div').innerHTML = 'Have a Lunch'
+            playaudio()
         }
         else if(napvalue == hours){
             pic.style.backgroundImage = 'url(./night.jpg)'
              document.querySelector('.msg-div').innerHTML = 'Have a Nap'
+             playaudio()
         }
         else if(nightvalue == hours){
             pic.style.backgroundImage = 'url(./night.jpg)'
              document.querySelector('.msg-div').innerHTML = 'Good Night'
+             playaudio()
         }
         else if(
             wakeupvalue === lunchvalue ||
@@ -90,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     btn.addEventListener('click', () =>{
         displayvalue()
+        // playaudio()
     })
 })
 
